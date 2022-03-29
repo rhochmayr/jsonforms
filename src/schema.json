@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "catalog_item_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "documentation": {
+      "type": "string"
+    },
+    "destroyplan": {
+      "type": "string"
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "system": {
+            "type": "string",
+            "enum": ["now", "sma", "awx"]
+          },
+          "job_number": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "support_group": {
+            "type": "string"
+          },
+          "max_time": {
+            "type": "integer"
+          },
+          "onError_step": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  },
+  "required": ["catalog_item_id", "name", "documentation", "tasks"]
+}

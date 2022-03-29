@@ -1,0 +1,28 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/catalog_item_id"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/name"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/documentation"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/destroyplan"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/tasks",
+      "options": {
+        "showSortButtons": true
+      }
+    }
+  ]
+}
