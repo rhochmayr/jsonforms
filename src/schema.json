@@ -20,7 +20,7 @@
         "properties": {
           "system": {
             "type": "string",
-            "enum": ["now", "sma", "awx"]
+            "enum": ["now", "sma", "awx", "end"]
           },
           "job_number": {
             "type": "string"
